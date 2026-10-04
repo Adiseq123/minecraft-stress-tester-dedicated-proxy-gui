@@ -1,0 +1,39 @@
+{
+  "name": "minecraft-stress-tester-webshare",
+  "version": "1.0.0",
+  "description": "Minecraft Stress Tester GUI with Dedicated SOCKS5 & SRV Resolver",
+  "main": "botterkastaleproxy.js",
+  "author": "Adisek",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win",
+    "dist:linux": "electron-builder --linux"
+  },
+  "dependencies": {
+    "mineflayer": "^4.20.0",
+    "socks": "^2.8.3"
+  },
+  "devDependencies": {
+    "electron": "^30.5.1",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.minetester.webshare.app",
+    "productName": "MinecraftStressTesterWebshare",
+    "files": [
+      "**/*",
+      "!dist/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable"
+    },
+    "linux": {
+      "target": ["tar.gz", "zip"],
+      "category": "Utility"
+    }
+  }
+}
