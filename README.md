@@ -1,5 +1,7 @@
 # 🎮 Minecraft Server Stress Tester (Dedicated SOCKS5 Proxies / SRV Resolver)
 
+<img width="1536" height="826" alt="image" src="https://github.com/user-attachments/assets/2b6791ad-b455-4448-a0a5-69fb21385151" />
+
 Zaawansowana aplikacja desktopowa zbudowana na bazie **Electron** oraz **Mineflayer**, przeznaczona do kontrolowanych testów wydajności, obciążenia (**stress-test**) oraz stabilności serwerów Minecraft.
 
 W tej wersji zastosowano obsługę **dedykowanych serwerów SOCKS5 Proxy** oraz **automatyczne rozwiązywanie rekordów DNS SRV**, dzięki czemu aplikacja może poprawnie obsługiwać również serwery korzystające z niestandardowych portów lub domen SRV.
